@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{5D149B70-437F-4211-88D5-09CB892F332A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestGame", "BestGame\BestGame.csproj", "{C78BC433-3FF9-4DB4-AC26-1B4841684605}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5D149B70-437F-4211-88D5-09CB892F332A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D149B70-437F-4211-88D5-09CB892F332A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D149B70-437F-4211-88D5-09CB892F332A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D149B70-437F-4211-88D5-09CB892F332A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C78BC433-3FF9-4DB4-AC26-1B4841684605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C78BC433-3FF9-4DB4-AC26-1B4841684605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C78BC433-3FF9-4DB4-AC26-1B4841684605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C78BC433-3FF9-4DB4-AC26-1B4841684605}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
