@@ -50,19 +50,36 @@ namespace clases
     {
         private int limInferior,limSuperior;
 
-        public int piensaNumero(int unaRespuesta) {
+        public Adivinador() {
+            limInferior = 1;
+            limSuperior = 100;
+        }
+
+        protected void piensaNumero() {
+            this.number = (limInferior + limSuperior) / 2;
+        }
+
+        public int Question(int unaRespuesta) {
 
             this.intentos++;
-            
-            if (unaRespuesta == 1)
+            switch (unaRespuesta)
             {
-                limSuperior = unaRespuesta;
+                case 1:
+                    limSuperior = this.number;
+                    piensaNumero();
+                    break;
+                case -1:
+                    limInferior = this.number;
+                    piensaNumero();
+                    break;
             }
-            else if (unaRespuesta == -1) {
-                limInferior = unaRespuesta;
-            }
-
-            this.number = (limInferior + limSuperior) / 2;
+            //if (unaRespuesta == 1)
+            //{
+            //    limSuperior = unaRespuesta;
+            //}
+            //else if (unaRespuesta == -1) {
+            //    limInferior = unaRespuesta;
+            //}
             return this.number;
         }
     }

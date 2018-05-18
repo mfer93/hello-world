@@ -33,17 +33,19 @@
             this.vsHuman = new System.Windows.Forms.RadioButton();
             this.vsComputer = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.mayor = new System.Windows.Forms.Button();
+            this.igual = new System.Windows.Forms.Button();
+            this.menor = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.menor = new System.Windows.Forms.Button();
-            this.igual = new System.Windows.Forms.Button();
-            this.mayor = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -85,9 +87,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.mayor);
-            this.groupBox3.Controls.Add(this.igual);
-            this.groupBox3.Controls.Add(this.menor);
+            this.groupBox3.Controls.Add(this.groupBox4);
             this.groupBox3.Controls.Add(this.richTextBox2);
             this.groupBox3.Location = new System.Drawing.Point(348, 63);
             this.groupBox3.Name = "groupBox3";
@@ -95,6 +95,36 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
+            // 
+            // mayor
+            // 
+            this.mayor.Location = new System.Drawing.Point(248, 19);
+            this.mayor.Name = "mayor";
+            this.mayor.Size = new System.Drawing.Size(75, 23);
+            this.mayor.TabIndex = 6;
+            this.mayor.Text = "Mayor";
+            this.mayor.UseVisualStyleBackColor = true;
+            this.mayor.Click += new System.EventHandler(this.mayor_Click);
+            // 
+            // igual
+            // 
+            this.igual.Location = new System.Drawing.Point(138, 19);
+            this.igual.Name = "igual";
+            this.igual.Size = new System.Drawing.Size(75, 23);
+            this.igual.TabIndex = 5;
+            this.igual.Text = "Correcto!";
+            this.igual.UseVisualStyleBackColor = true;
+            this.igual.Click += new System.EventHandler(this.igual_Click);
+            // 
+            // menor
+            // 
+            this.menor.Location = new System.Drawing.Point(16, 19);
+            this.menor.Name = "menor";
+            this.menor.Size = new System.Drawing.Size(75, 23);
+            this.menor.TabIndex = 4;
+            this.menor.Text = "Menor";
+            this.menor.UseVisualStyleBackColor = true;
+            this.menor.Click += new System.EventHandler(this.menor_Click);
             // 
             // richTextBox2
             // 
@@ -141,37 +171,23 @@
             this.richTextBox1.Location = new System.Drawing.Point(21, 19);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox1.Size = new System.Drawing.Size(284, 247);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
-            // menor
+            // groupBox4
             // 
-            this.menor.Location = new System.Drawing.Point(22, 273);
-            this.menor.Name = "menor";
-            this.menor.Size = new System.Drawing.Size(75, 23);
-            this.menor.TabIndex = 4;
-            this.menor.Text = "Menor";
-            this.menor.UseVisualStyleBackColor = true;
-            // 
-            // igual
-            // 
-            this.igual.Location = new System.Drawing.Point(139, 273);
-            this.igual.Name = "igual";
-            this.igual.Size = new System.Drawing.Size(75, 23);
-            this.igual.TabIndex = 5;
-            this.igual.Text = "Correcto!";
-            this.igual.UseVisualStyleBackColor = true;
-            // 
-            // mayor
-            // 
-            this.mayor.Location = new System.Drawing.Point(254, 272);
-            this.mayor.Name = "mayor";
-            this.mayor.Size = new System.Drawing.Size(75, 23);
-            this.mayor.TabIndex = 6;
-            this.mayor.Text = "Mayor";
-            this.mayor.UseVisualStyleBackColor = true;
+            this.groupBox4.Controls.Add(this.menor);
+            this.groupBox4.Controls.Add(this.mayor);
+            this.groupBox4.Controls.Add(this.igual);
+            this.groupBox4.Location = new System.Drawing.Point(6, 282);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(343, 66);
+            this.groupBox4.TabIndex = 7;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // Form1
             // 
@@ -187,6 +203,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -205,6 +222,7 @@
         private System.Windows.Forms.Button mayor;
         private System.Windows.Forms.Button igual;
         private System.Windows.Forms.Button menor;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 
